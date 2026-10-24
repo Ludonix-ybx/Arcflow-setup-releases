@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="240" viewBox="0 0 860 240" fill="none" role="img" aria-label="Arcflow Protocol: know everything, pause nothing">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070B12"/>
+      <stop offset="100%" stop-color="#14103A"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#4DD8FF" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#4DD8FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="word" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4DD8FF"/>
+      <stop offset="55%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#D946EF"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#4DD8FF"/>
+      <stop offset="100%" stop-color="#D946EF" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#FFFFFF" fill-opacity="0.06"/>
+    </pattern>
+    <clipPath id="card">
+      <rect x="1" y="1" width="858" height="238" rx="12"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="860" height="240" fill="url(#bg)"/>
+    <rect width="860" height="240" fill="url(#dots)"/>
+    <rect width="860" height="240" fill="url(#glow)"/>
+
+    <!-- overlay-style corner brackets -->
+    <g stroke="#4DD8FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <animate attributeName="stroke-opacity" values="0.45;0.9;0.45" dur="3.2s" repeatCount="indefinite"/>
+      <path d="M170,58 V34 H194"/>
+      <path d="M690,58 V34 H666"/>
+      <path d="M170,150 V174 H194"/>
+      <path d="M690,150 V174 H666"/>
+    </g>
+
+    <!-- wordmark -->
+    <text x="434" y="108" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="70"
+          font-weight="800" letter-spacing="8" fill="url(#word)">ARCFLOW</text>
+    <text x="437" y="142" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18"
+          font-weight="500" letter-spacing="14" fill="#9CA3C7">PROTOCOL</text>
+
+    <!-- tagline -->
+    <text x="430" y="186" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif"
+          font-size="15" letter-spacing="2" fill="#8D93B8">Know everything. Pause nothing.</text>
+
+    <!-- sweeping accent line -->
+    <rect x="130" y="206" width="600" height="2" fill="#FFFFFF" fill-opacity="0.08"/>
+    <rect x="130" y="206" width="200" height="2" fill="url(#line)">
+      <animate attributeName="x" values="130;530;130" dur="5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <rect x="1" y="1" width="858" height="238" rx="12" stroke="#2A2F55" stroke-width="1.5"/>
+</svg>
